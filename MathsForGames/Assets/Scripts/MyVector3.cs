@@ -5,6 +5,7 @@ public class MyVector3
 {
     public float x, y, z;
 
+
     public MyVector3(float x, float y, float z)
     {
         this.x = x;
@@ -12,6 +13,7 @@ public class MyVector3
         this.z = z;
 
     }
+
 
     //Create a static function that takes in two MyVector3 objects, adds them together, and returns the resulting vector
     public static MyVector3 AddingVectors3(MyVector3 vectorA, MyVector3 vectorB)
@@ -46,6 +48,16 @@ public class MyVector3
         return vectorC;
     }
 
+
+    // Workshop 2 Create a static function that takes in one vector and returns the length/magnitude squared
+    public float LengthSq()
+    {
+        float rv;
+        rv = x * x + y * y + z * z;
+        return rv;
+
+    }
+
     //Create a function inside MyVector3 that converts your class object into a UnityEngine.Vector3(this will be needed for the next part)
 
     public Vector3 ToUnityVector()
@@ -54,4 +66,6 @@ public class MyVector3
 
         return vectorC;
     }
+
+
 }
