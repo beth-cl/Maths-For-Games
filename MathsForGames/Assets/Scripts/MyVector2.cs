@@ -14,6 +14,35 @@ public class MyVector2
         this.y = y;
     }
 
+    //Create a static function that takes in two MyVector3 objects, adds them together, and returns the resulting vector
+    public static MyVector2 AddingVectors2(MyVector2 vectorA, MyVector2 vectorB)
+    {
+        MyVector2 vectorC = new MyVector2(0f, 0f);
+
+        vectorC.x = vectorA.x + vectorB.x;
+        vectorC.y = vectorA.y + vectorB.y;
+
+        return vectorC;
+    }
+
+    //Create a static function that takes in two MyVector3 objects, and subtracts them, and returns the resulting vector
+    public static MyVector2 SubtractingVector3(MyVector2 vectorA, MyVector2 vectorB)
+    {
+        MyVector2 vectorC = new MyVector2(0f, 0f);
+
+        vectorC.x = vectorA.x - vectorB.x;
+        vectorC.y = vectorA.y - vectorB.y;
+
+        return vectorC;
+    }
+
+    public Vector2 ToUnityVector()
+    {
+        Vector2 vectorC = new Vector2(x, y);
+
+        return vectorC;
+    }
+
     //Create a static function that takes in one vector and returns the length/magnitude squared
     public float V2_LengthSq()
     {
