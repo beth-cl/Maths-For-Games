@@ -59,3 +59,25 @@ public class Workshop3
         return C;
     }
 }
+
+
+//workshop 4
+public class Matrix4by4
+{
+    public float[,] values;
+    public Matrix4by4(Vector4 column1, Vector4 column2, Vector4 column3, Vector4 column4)
+    {
+        values = new float[4, 4];
+         
+    }
+    public Matrix4by4(MyVector3 column1, MyVector3 column2, MyVector3 column3, MyVector3 column4)
+    {
+
+    }
+
+    public static Vector4 operator *(Matrix4by4 lhs, Vector4 rhs)
+    {
+        return Vector4.zero;
+    }
+
+}
